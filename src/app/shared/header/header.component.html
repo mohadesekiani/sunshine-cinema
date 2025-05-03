@@ -1,0 +1,45 @@
+<header class="bg-white shadow-md">
+  <!-- ردیف اول -->
+  <div
+    class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center border-b"
+  >
+    <!-- سمت راست: لوگو و جستجو -->
+    <div class="flex items-center gap-4">
+      <a routerLink="/" class="text-2xl font-bold text-red-600"
+        >🎬 سینما آفتاب</a
+      >
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="جستجو..."
+          class="border rounded-lg px-4 py-2 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-red-500"
+        />
+        <button
+          class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500"
+        >
+          🔍
+        </button>
+      </div>
+    </div>
+
+    <!-- سمت چپ: شهرها، بلیت‌های من، ورود -->
+    <div class="flex items-center gap-4 text-sm text-gray-600">
+      <a href="#" class="hover:text-red-500">همه شهرها</a>
+      <a routerLink="/my-tickets" class="hover:text-red-500">بلیت‌های من</a>
+      <a routerLink="/auth/signup" class="hover:text-red-500">ورود / ثبت‌نام</a>
+    </div>
+  </div>
+
+  <!-- ردیف دوم -->
+  <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+    <nav class="flex gap-4 text-gray-600">
+      <a routerLink="/" routerLinkActive="font-semibold text-red-500">خانه</a>
+      <a routerLink="/booking" routerLinkActive="font-semibold text-red-500"
+        >رزرو</a
+      >
+      <a routerLink="/admin" routerLinkActive="font-semibold text-red-500"
+        >مدیریت</a
+      >
+    </nav>
+  </div>
+</header>

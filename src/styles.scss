@@ -1,0 +1,49 @@
+// /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "IRANSans", sans-serif;
+  background-color: #f9fafb;
+}
+/* فایل: styles.scss */
+
+/* تنظیمات کلی برای صفحه */
+body,
+html {
+  height: 100%; /* ارتفاع کل صفحه */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ثابت کردن هدر */
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* برای نمایش بالاتر از سایر عناصر */
+  background-color: white; /* پس‌زمینه */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* سایه */
+}
+
+/* تنظیمات برای بخش اصلی */
+main {
+  flex: 1; /* بخش اصلی صفحه */
+  margin-top: 64px; /* ارتفاع هدر (تنظیم کنید بر اساس ارتفاع واقعی هدر) */
+  margin-bottom: 64px; /* ارتفاع فوتر (تنظیم کنید بر اساس ارتفاع واقعی فوتر) */
+  overflow-y: auto; /* فعال کردن اسکرول فقط برای main */
+}
+
+/* ثابت کردن فوتر */
+app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* برای نمایش بالاتر از سایر عناصر */
+  background-color: white; /* پس‌زمینه */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* سایه */
+}

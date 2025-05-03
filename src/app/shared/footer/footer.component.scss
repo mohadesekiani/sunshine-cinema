@@ -1,0 +1,22 @@
+/* استایل کلی برای فوتر */
+footer {
+  background-color: #f9fafb; /* پس‌زمینه روشن */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* سایه داخلی */
+  margin-top: 2.5rem; /* فاصله از محتوای بالا */
+  padding: 1.5rem 0;
+}
+
+/* کانتینر اصلی */
+footer .max-w-7xl {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 0.875rem; /* اندازه متن کوچک */
+  color: #6b7280; /* خاکستری ملایم */
+}
+
+/* متن کپی‌رایت */
+footer .max-w-7xl span {
+  font-weight: 500; /* ضخامت متن */
+}
